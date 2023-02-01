@@ -1,0 +1,15 @@
+---
+- name: Criar usuário ntux01
+  user:
+    name: ntux01
+    shell: /bin/bash
+    state: present
+    
+- name: Criar usuário ntux02
+  user:
+    name: ntux02
+    shell: /bin/bash
+    state: present
+    groups: pmp
+    
+ ...
